@@ -1,21 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
-<!DOCTYPE html>
+<%@include file="pageLeft.jsp"%>
+<!doctype html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Sample APP</title>
-<link rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"	href="<c:url value="/css/bootstrap.min.css"/>" />
-<link rel="stylesheet"	href="<c:url value="/js/validator/formValidation.min.css"/>" />
-<style>
-.help-block{
-	color:red;
-}
-</style>
 </head>
 
 <body>
@@ -214,29 +205,11 @@
 				</div>
 			</div>
 		</div>
-        <button type="reset" class="btn btn-default pull-center" onclick="window.location.href='/'">Cancel</button>
+        <button type="reset" class="btn btn-default pull-center" onclick="window.location.href='/QuizManager'">Cancel</button>
 		<input type="submit" class="btn btn-info" name="register-submit" id="register-submit" tabindex="4"
 			class="form-control btn btn-register" value="Register Now"
 			style="float: center;">
-
 	</form>
-
-
-	<!-- JQuery libraries -->
-	<script src="<c:url value="/js/jquery/jquery-2.1.4.min.js"/>" type="text/javascript"></script>
-	<script src="<c:url value="/js/jquery/jquery.js"/>"	type="text/javascript"></script>
-	<script src="<c:url value="/js/jquery/jquery-ui.min.js"/>" type="text/javascript"></script>
-	<script src="<c:url value="/js/jquery/jquery.min.js"/>"	type="text/javascript"></script>
-
-	<!-- form validation libraries  -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
-	<script src="<c:url value="/js/validator/formValidation.min.js"/>" type="text/javascript"></script>
-	<script src="<c:url value="/js/validator/bootstrap.min.js"/>" type="text/javascript"></script>
-	
-	<script src="<c:url value="/js/validation.js"/>" type="text/javascript"></script>
-	<script src="<c:url value="/js/bootstrap-datepicker.js"/>" 	type="text/javascript"></script>
-	
-
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -249,11 +222,6 @@ $(document).ready(function() {
 		autoclose : true
 	});
 });
-
-
-
-
-
 </script>
 
 </html>
