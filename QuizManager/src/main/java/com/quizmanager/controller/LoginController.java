@@ -28,5 +28,7 @@ public class LoginController {
 		System.out.println("user " + user);
 		return new ModelAndView("registration");
 	}
+	
+	
 
 }

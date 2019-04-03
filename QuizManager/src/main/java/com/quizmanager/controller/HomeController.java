@@ -17,4 +17,9 @@ public class HomeController {
 	public String homePage() {
 		return "index";
 	}
+	
+	@RequestMapping("/home")
+	public String home() {
+		return "index";
+	}
 }
